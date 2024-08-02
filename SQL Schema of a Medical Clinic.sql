@@ -1,10 +1,10 @@
 -- SQL Schema of a Medical Clinic
--- 1. Patient Table
 CREATE DATABASE IF NOT EXISTS Medical_Clinic;
 
 -- To make sure that I'm making the changes in the right schema/databse, not another 
 USE Medical_Clinic;
 
+-- 1. Patient Table
 CREATE TABLE IF NOT EXISTS Patient (
     PatientID INT PRIMARY KEY AUTO_INCREMENT,
     PatientName VARCHAR(100) NOT NULL,
