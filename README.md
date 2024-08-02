@@ -2,6 +2,17 @@
 
 This is a database schema for a clinic, focusing on appointments and prescriptions.
 
+# Constraints and Business Rules
+1. Primary Keys: Ensure uniqueness of each entity.
+2. Foreign Keys: Maintain referential integrity between tables.
+    - PatientID in Appointment references Patient.
+    - DoctorID in Appointment references Doctor.
+    - AppointmentID in Prescription references Appointment.
+    - MedicationID in Prescription references Medication.
+3. Auto Increment: Used for primary keys to ensure each new record has a unique ID.
+4. Not Null: Ensures essential fields must have values (e.g., _Name, Contact).
+5. Cascade Deletes: Ensure that deleting a patient or appointment also deletes associated records, maintaining data integrity.
+
 ## My Deliverables:
 
 - [x] The [SQL Code](/SQL%20Schema%20of%20a%20Medical%20Clinic.sql).
